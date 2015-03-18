@@ -9,6 +9,7 @@
 
 var hasOwn = Object.prototype.hasOwnProperty;
 
+
 /**
  * Expose `MapCache`
  */
