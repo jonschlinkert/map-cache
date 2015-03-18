@@ -1,0 +1,44 @@
+{
+  "name": "map-cache",
+  "description": "Basic cache object for storing key-value pairs.",
+  "version": "0.1.1",
+  "homepage": "https://github.com/jonschlinkert/map-cache",
+  "author": {
+    "name": "Jon Schlinkert",
+    "url": "https://github.com/jonschlinkert"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jonschlinkert/map-cache.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jonschlinkert/map-cache/issues"
+  },
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/jonschlinkert/map-cache/blob/master/LICENSE"
+  },
+  "files": [
+    "index.js"
+  ],
+  "main": "index.js",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "should": "*"
+  },
+  "keywords": [
+    "cache",
+    "get",
+    "has",
+    "object",
+    "set",
+    "storage",
+    "store"
+  ]
+}
