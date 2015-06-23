@@ -1,14 +1,22 @@
-# map-cache [![NPM version](https://badge.fury.io/js/map-cache.svg)](http://badge.fury.io/js/map-cache)  [![Build Status](https://travis-ci.org/jonschlinkert/map-cache.svg)](https://travis-ci.org/jonschlinkert/map-cache) 
+# map-cache [![NPM version](https://badge.fury.io/js/map-cache.svg)](http://badge.fury.io/js/map-cache)  [![Build Status](https://travis-ci.org/jonschlinkert/map-cache.svg)](https://travis-ci.org/jonschlinkert/map-cache)
 
 > Basic cache object for storing key-value pairs.
 
 Based on MapCache in Lo-dash v3.0.
 
-## Install with [npm](npmjs.org)
+## Install
 
-```bash
-npm i map-cache --save
+Install with [npm](https://www.npmjs.com/)
+
+```sh
+$ npm i map-cache --save
 ```
+
+## Similar projects
+
+* [config-cache](https://github.com/jonschlinkert/config-cache): General purpose JavaScript object storage methods.
+* [cache-base](https://github.com/jonschlinkert/cache-base): Generic object cache for node.js/javascript projects.
+* [option-cache](https://github.com/jonschlinkert/option-cache): Simple API for managing options in JavaScript applications.
 
 ## Usage
 
@@ -17,82 +25,104 @@ var mapCache = require('map-cache');
 ```
 
 ## API
-### [MapCache](./index.js#L28)
+
+### [MapCache](index.js#L29)
 
 Creates a cache object to store key/value pairs.
+
+**Example**
 
 ```js
 var cache = new MapCache();
 ```
 
-### [.set](./index.js#L45)
+### [.set](index.js#L46)
 
 Adds `value` to `key` on the cache.
 
-* `key` **{String}**: The key of the value to cache.    
-* `value` **{*}**: The value to cache.    
-* `returns` **{Object}**: Returns the `Cache` object for chaining.  
+**Params**
+
+* `key` **{String}**: The key of the value to cache.
+* `value` **{*}**: The value to cache.
+* `returns` **{Object}**: Returns the `Cache` object for chaining.
+
+**Example**
 
 ```js
 cache.set('foo', 'bar');
 ```
 
-### [.get](./index.js#L65)
+### [.get](index.js#L66)
 
 Gets the cached value for `key`.
 
-* `key` **{String}**: The key of the value to get.    
-* `returns` **{*}**: Returns the cached value.  
+**Params**
+
+* `key` **{String}**: The key of the value to get.
+* `returns` **{*}**: Returns the cached value.
+
+**Example**
 
 ```js
 cache.get('foo');
 //=> 'bar'
 ```
 
-### [.has](./index.js#L82)
+### [.has](index.js#L83)
 
 Checks if a cached value for `key` exists.
 
-* `key` **{String}**: The key of the entry to check.    
-* `returns` **{Boolean}**: Returns `true` if an entry for `key` exists, else `false`.  
+**Params**
+
+* `key` **{String}**: The key of the entry to check.
+* `returns` **{Boolean}**: Returns `true` if an entry for `key` exists, else `false`.
+
+**Example**
 
 ```js
 cache.has('foo');
 //=> true
 ```
 
-### [.del](./index.js#L98)
+### [.del](index.js#L99)
 
 Removes `key` and its value from the cache.
 
-* `key` **{String}**: The key of the value to remove.    
-* `returns` **{Boolean}**: Returns `true` if the entry was removed successfully, else `false`.  
+**Params**
+
+* `key` **{String}**: The key of the value to remove.
+* `returns` **{Boolean}**: Returns `true` if the entry was removed successfully, else `false`.
+
+**Example**
 
 ```js
 cache.del('foo');
 ```
 
 ## Run tests
-Install dev dependencies.
 
-```bash
-npm i -d && npm test
+Install dev dependencies:
+
+```sh
+$ npm i -d && npm test
 ```
 
 ## Contributing
-Pull requests and stars are always welcome. For bugs and feature requests, [please create an issue](https://github.com/jonschlinkert/map-cache/issues)
+
+Pull requests and stars are always welcome. For bugs and feature requests, [please create an issue](https://github.com/jonschlinkert/map-cache/issues/new)
 
 ## Author
 
 **Jon Schlinkert**
- 
+
 + [github/jonschlinkert](https://github.com/jonschlinkert)
-+ [twitter/jonschlinkert](http://twitter.com/jonschlinkert) 
++ [twitter/jonschlinkert](http://twitter.com/jonschlinkert)
 
 ## License
-Copyright (c) 2015 Jon Schlinkert  
+
+Copyright © 2015 Jon Schlinkert
 Based on MapCache in Lo-dash v3.0. [MIT License](https://github.com/lodash/lodash/blob/master/LICENSE.txt)
-Released under the MIT license
+Released under the MIT license.
 
 ***
 
