@@ -88,14 +88,14 @@ MapCache.prototype.has = function mapHas(key) {
  * Removes `key` and its value from the cache.
  *
  * ```js
- * cache.delete('foo');
+ * cache.del('foo');
  * ```
- * @title .delete
+ * @title .del
  * @param {String} `key` The key of the value to remove.
  * @returns {Boolean} Returns `true` if the entry was removed successfully, else `false`.
  * @api public
  */
 
-MapCache.prototype['delete'] = function mapDelete(key) {
+MapCache.prototype.del = function mapDelete(key) {
   return this.has(key) && delete this.__data__[key];
 };
