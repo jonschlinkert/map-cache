@@ -17,12 +17,12 @@ describe('mapCache', function () {
   it('should set values on the `__data__` object on the cache:', function () {
     cache.set('a', 'b');
     cache.should.eql({ __data__: { a: 'b' }});
-    cache.delete('a');
+    cache.del('a');
   });
 
   it('should delete values from the `__data__` object:', function () {
     cache.set('a', 'b');
-    cache.delete('a');
+    cache.del('a');
     cache.should.eql({ __data__: {}});
   });
 
