@@ -25,8 +25,8 @@ module.exports = MapCache;
  * @api public
  */
 
-function MapCache() {
-  this.__data__ = {};
+function MapCache(data) {
+  this.__data__ = data || {};
 }
 
 /**
