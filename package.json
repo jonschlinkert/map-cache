@@ -1,7 +1,7 @@
 {
   "name": "map-cache",
   "description": "Basic cache object for storing key-value pairs.",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "homepage": "https://github.com/jonschlinkert/map-cache",
   "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
   "repository": "jonschlinkert/map-cache",
@@ -20,8 +20,8 @@
     "test": "mocha"
   },
   "devDependencies": {
-    "gulp-format-md": "^0.1.7",
-    "should": "^8.3.0"
+    "gulp-format-md": "^0.1.9",
+    "should": "^8.3.1"
   },
   "keywords": [
     "cache",
